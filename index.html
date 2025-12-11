@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seiryo Linux</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      background: #fafafa;
+      color: #222;
+      padding: 2rem 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+    .japanese {
+      font-size: 1.1rem;
+      color: #666;
+      margin-top: 0.4rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
+    }
+    .features {
+      margin: 2rem 0;
+    }
+    .features li {
+      margin-bottom: 0.6rem;
+      list-style: none;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    .features li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #444;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #111;
+        color: #eee;
+      }
+      .japanese { color: #aaa; }
+      .features li::before { color: #ccc; }
+      a { color: #66b3ff; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Seiryo Linux</h1>
+    <div class="japanese">清涼 — clarity, coolness, volume</div>
+  </header>
+
+  <main>
+    <p>
+      Seiryo is a DIY, rolling-release meta-distribution for those who value
+      <strong>coherence, choice, and control</strong>—without chaos.
+    </p>
+
+    <p>
+      Built around <strong>koushou</strong>, a fast, KDL-native package manager,
+      Seiryo offers multiple init systems, C libraries, and userlands—each a
+      complete, tested system flavor.
+    </p>
+
+    <div class="features">
+      <ul>
+        <li><strong>Flavors</strong>: systemd, OpenRC, s6, dinit × glibc, musl</li>
+        <li><strong>Package manager</strong>: koushou — daemon-powered, atomic, KDL-based</li>
+        <li><strong>Stable rolling</strong>: tested updates, rollback support</li>
+        <li><strong>Desktop-ready</strong>: GNOME (patched for non-systemd), KDE, or minimal</li>
+        <li><strong>100% open</strong>: passion project, no corporate backing</li>
+      </ul>
+    </div>
+
+    <p>
+      Not a replacement. Not a clone. Just a system that fits.
+    </p>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://github.com/seiryo-linux">Source & Packages</a> •
+      Made with care • No domains required
+    </p>
+  </footer>
+</body>
+</html>
